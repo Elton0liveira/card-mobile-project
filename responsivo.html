@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        /* Método mobile first (desenvolvimento acompanhando a tela do celular) */
+
+        #container {
+                border: 3px solid black;
+               width: 100%;
+               max-width: 1100px;
+               margin-left: auto;
+               margin-right: auto;
+            }
+
+        h1 {
+            color: green;
+        }
+        /* BREAKPOINTS */
+        /* Tablets >= 768px */
+        @media screen and (min-width: 768px) {
+            h1 {
+                text-align: center;
+            }
+        }
+        
+        /*  Desktops >= 920px */
+        @media screen and (min-width: 920px) {
+            body {
+                background-color: grey;
+            }
+            h1{
+                color: black;
+            }
+        
+        }
+
+        /* Telas largas >= 1200px */
+        @media screen and (min-width: 1200px){
+            body {
+                background-color: lightcoral;
+            }
+            h1{
+               text-align: center;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>Site Responsivo</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptas atque quis officia eius dolorem, magni perferendis perspiciatis, necessitatibus est maxime facilis porro excepturi fuga praesentium quasi aut optio deserunt hic cumque quisquam tempore voluptatem odio? Asperiores nihil, aperiam aliquid minima vitae at distinctio qui dolorum totam cupiditate similique fugiat?</p>
+    </div>
+
+</body>
+</html>
